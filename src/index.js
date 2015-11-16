@@ -6,13 +6,14 @@ var Writer = require ('./write/writer');
 
 var config = {
         transformers: [
-                require ('./transformers/element/propertyTransformer'),
-                require ('./transformers/element/eventTransformer'),
-                require ('./transformers/element/defaultTransformer'),
-                require ('./transformers/text/transformer'),
-                require ('./transformers/attribute/aliasTransformer'),
-                require ('./transformers/attribute/classTransformer'),
-                require ('./transformers/attribute/defaultTransformer')
+                require ('./transformers/element/property'),
+                require ('./transformers/element/event'),
+                require ('./transformers/element/default'),
+                require ('./transformers/text/default'),
+                require ('./transformers/attribute/alias'),
+                require ('./transformers/attribute/class'),
+                require ('./transformers/attribute/visible'),
+                require ('./transformers/attribute/default')
         ]
 };
 

@@ -1,0 +1,4 @@
+<div>
+        <div alias="visibleElement" visible="true" />
+        <div alias="hiddenElement" visible="false" />
+</div>
