@@ -25,7 +25,7 @@ In order to compile the generator:
 
 ```
 # Install gulp
-sudo npm install -g gulp`
+sudo npm install -g gulp
 
 # Install the dependencies
 npm install
