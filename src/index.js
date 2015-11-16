@@ -12,6 +12,7 @@ var config = {
                 require ('./transformers/text/default'),
                 require ('./transformers/attribute/alias'),
                 require ('./transformers/attribute/class'),
+                require ('./transformers/attribute/localAlias'),
                 require ('./transformers/attribute/visible'),
                 require ('./transformers/attribute/default')
         ]

@@ -1,0 +1,4 @@
+<div>
+        <div alias="myAlias" />
+        <div localAlias="myLocalAlias" />
+</div>
