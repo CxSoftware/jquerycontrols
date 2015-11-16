@@ -21,10 +21,16 @@ All the magic behind jQueryControls works thanks to these external dependencies:
 
 ## Compile
 
-In order to compile the generator, you will need to install traceur: `npm install -g traceur`
+In order to compile the generator:
 
 ```
+# Install gulp
+sudo npm install -g gulp`
+
+# Install the dependencies
 npm install
+
+# Run gulp
 gulp
 ```
 
