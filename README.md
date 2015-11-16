@@ -7,6 +7,18 @@ The jQuery Controls generates JS code based on XML files (HTML like files) and o
 
 This is useful to encapsulate code related with any specific widget on your HTML page.
 
+## Dependencies
+
+All the magic behind jQueryControls works thanks to these external dependencies:
+
+* [ast-types](https://github.com/benjamn/ast-types): Esprima-compatible implementation of the Mozilla JS Parser API
+* [escodegen](https://github.com/estools/escodegen): ECMAScript code generator
+* [esprima](https://github.com/jquery/esprima): ECMAScript parsing infrastructure for multipurpose analysis http://esprima.org
+* [fs-promise](https://github.com/kevinbeaty/fs-promise): Node fs methods as Promise/A+ (optional fs-extra, graceful-fs)
+* [linq](https://github.com/mihaifm/linq): LINQ for JavaScript library
+* [traceur](https://github.com/google/traceur-compiler/): JavaScript.next-to-JavaScript-of-today compiler
+* [xmldom](https://github.com/jindw/xmldom): A PURE JS W3C Standard based (XML DOM Level2 CORE) DOMParser and XMLSerializer
+
 ## Compile
 
 In order to compile the generator, you will need to install traceur: `npm install -g traceur`
