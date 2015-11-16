@@ -10,8 +10,8 @@ var config = {
                 require ('./transformers/element/eventTransformer'),
                 require ('./transformers/element/defaultTransformer'),
                 require ('./transformers/text/transformer'),
+                require ('./transformers/attribute/aliasTransformer'),
                 require ('./transformers/attribute/classTransformer'),
-                require ('./transformers/attribute/localIDTransformer'),
                 require ('./transformers/attribute/defaultTransformer')
         ]
 };
