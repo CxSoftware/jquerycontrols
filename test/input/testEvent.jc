@@ -1,3 +1,4 @@
 <div>
         <event name="modified" />
+        Click me to trigger!
 </div>
