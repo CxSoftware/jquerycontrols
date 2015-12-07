@@ -15,7 +15,7 @@ $(function ()
         var eventControl = new testEvent ();
         eventControl.modified (function () { alert ('triggered 1!'); });
         eventControl.modified (function () { console.log ('triggered 2!'); });
-        container.append (eventControl.root.text ('click me to trigger!'));
+        container.append (eventControl.root);
 
         // Test property
         var propertyControl = new testProperty ();
