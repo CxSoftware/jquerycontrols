@@ -90,3 +90,7 @@ $('#someContainer').append (form.root);
 ```
 
 Reload your page and play :)
+
+## More samples
+
+Read the documentation in the [Wiki](../../wiki). See [the test code](/test).
