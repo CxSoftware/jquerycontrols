@@ -30,7 +30,7 @@ All the magic behind jQueryControls works thanks to these external dependencies:
 
 In order to compile the generator:
 
-```
+```bash
 # Install gulp
 sudo npm install -g gulp
 
@@ -45,7 +45,7 @@ gulp
 
 ### Step 1: Create a file named LoginForm.jc:
 
-```
+```xml
 <div class="loginForm">
   <event name="login" />
   Username: <input alias="username" /><br />
@@ -56,7 +56,7 @@ gulp
 
 ### Step 2: Create a file named LoginForm.js:
 
-```
+```javascript
 control.button.click (
   function ()
   {
@@ -66,7 +66,9 @@ control.button.click (
 
 ### Step 3: Run jquerycontrols
 
-`./dist/run.js sourceDirectory destinationDirectory`
+```bash
+./dist/run.js sourceDirectory destinationDirectory
+```
 
 where source directory is the directory where you placed your .jc file and destinationDirectory is any other directory (likely empty).
 
@@ -74,13 +76,15 @@ where source directory is the directory where you placed your .jc file and desti
 
 Add a reference to the output LoginForm.js file:
 
-`<script src="outputDirectory/LoginForm.js"></script>`
+```xml
+<script src="outputDirectory/LoginForm.js"></script>
+```
 
 Note that jQuery is required as well.
 
 Create and play with your control in your own JS file:
 
-```
+```javascript
 // Init
 var form = new LoginForm ();
 
