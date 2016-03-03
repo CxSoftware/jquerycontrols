@@ -18,6 +18,11 @@ var write = async (control, outputDirectory) =>
                                 b.thisExpression ())
                 ]));
 
+        // Create external code
+        var externalWriter = new ExternalWriter (control.dom);
+        for (let external of externalWriter.write ())
+                controlBlockParts.push (external);
+
         // Create root element
         var domWriter = new DomWriter (control.dom);
         controlBlockParts.push (b.assignmentStatement (
@@ -27,11 +32,6 @@ var write = async (control, outputDirectory) =>
                         b.identifier("root"),
                         false),
                 domWriter.write ()));
-
-        // Create external code
-        var externalWriter = new ExternalWriter (control.dom);
-        for (let external of externalWriter.write ())
-                controlBlockParts.push (external);
 
         // Add script
         if (control.script)
