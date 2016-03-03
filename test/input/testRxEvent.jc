@@ -1,0 +1,4 @@
+<div>
+        <rxevent name="click" />
+        <button localAlias="button">Click me Rx!</button>
+</div>

@@ -17,6 +17,12 @@ $(function ()
         eventControl.modified (function () { console.log ('triggered 2!'); });
         container.append (eventControl.root);
 
+        // Test rxevent
+        var rxeventControl = new testRxEvent ();
+        rxeventControl.click.subscribe (function (ev) { console.log ('rxevent', ev); });
+        rxeventControl.click.subscribe (function (ev) { console.log ('rxevent 2nd subscription'); });
+        container.append (rxeventControl.root);
+
         // Test property
         var propertyControl = new testProperty ();
         console.log ('initial value', propertyControl.count());
