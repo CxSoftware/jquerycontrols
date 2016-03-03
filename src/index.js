@@ -8,6 +8,7 @@ var config = {
         transformers: [
                 require ('./transformers/element/property'),
                 require ('./transformers/element/event'),
+                require ('./transformers/element/rxevent'),
                 require ('./transformers/element/default'),
                 require ('./transformers/text/default'),
                 require ('./transformers/attribute/alias'),
