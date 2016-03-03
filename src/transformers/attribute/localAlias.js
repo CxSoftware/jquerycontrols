@@ -3,7 +3,7 @@ var b = require("ast-types").builders;
 module.exports =
 {
         // Config
-        itemName: /localAlias/,
+        itemName: /^localAlias$/,
         itemType: 'Attr',
 
         // Method

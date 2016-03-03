@@ -3,7 +3,7 @@ var b = require("ast-types").builders;
 module.exports =
 {
         // Config
-        itemName: /class/,
+        itemName: /^class$/,
         itemType: 'Attr',
 
         // Method

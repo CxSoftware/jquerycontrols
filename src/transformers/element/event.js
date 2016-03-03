@@ -5,7 +5,7 @@ var capitalize = s => s.charAt(0).toUpperCase() + s.slice(1);
 module.exports =
 {
         // Config
-        itemName: /event/,
+        itemName: /^event$/,
         itemType: 'Element',
         firstLevel: true,
 
