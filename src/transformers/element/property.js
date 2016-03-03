@@ -3,7 +3,7 @@ var b = require("ast-types").builders;
 module.exports =
 {
         // Config
-        itemName: /property/,
+        itemName: /^property$/,
         itemType: 'Element',
         firstLevel: true,
 
@@ -18,7 +18,7 @@ module.exports =
                 var propertyName = element.attributes[0].value.trim();
                 if (propertyName.length == 0)
                         throw Error ('Property should have a name');
-                
+
                 var localValueName = propertyName + 'Value';
 
                 return {
