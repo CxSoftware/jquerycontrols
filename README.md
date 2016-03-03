@@ -7,7 +7,14 @@ The jQuery Controls generates JS code based on XML files (HTML like files) and o
 
 This is useful to encapsulate code related with any specific widget on your HTML page.
 
-## Dependencies
+## Runtime dependencies
+
+The generated code works thanks to these libraries:
+
+* [jQuery](https://jquery.com): A fast, small, and feature-rich JavaScript library.
+* [RxJS](https://github.com/Reactive-Extensions/RxJS): The Reactive Extensions for JavaScript (optional for rxevent)
+
+## Build dependencies
 
 All the magic behind jQueryControls works thanks to these external dependencies:
 
