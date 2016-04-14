@@ -26,14 +26,19 @@ module.exports = transformers =>
                                 "Transformer requires item to be on the first level: " +
                                 item.constructor.name + " " + item.localName);
 
+                if (transformer.init == null)
+                        return null;
+
                 var childNodes = item.childNodes ?
                         Enumerable.from (item.childNodes)
                         .select (x => readItem (x, level + 1))
+                        .where (x => x != null)
                         : Enumerable.empty ();
 
                 var childAttributes = item.attributes ?
                         Enumerable.from (item.attributes)
                         .select (x => readItem (x, level + 1))
+                        .where (x => x != null)
                         : Enumerable.empty ();
 
                 return {
