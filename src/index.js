@@ -15,7 +15,8 @@ var config = {
                 require ('./transformers/attribute/class'),
                 require ('./transformers/attribute/localAlias'),
                 require ('./transformers/attribute/visible'),
-                require ('./transformers/attribute/default')
+                require ('./transformers/attribute/default'),
+                require ('./transformers/comment/default')
         ]
 };
 
