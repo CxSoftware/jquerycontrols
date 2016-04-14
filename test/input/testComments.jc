@@ -1,0 +1,9 @@
+<!-- This control... -->
+<div>
+        ...
+        <!-- ...has several comments -->
+        ...
+        <div>
+                <!-- ...three of them -->
+        </div>
+</div>
